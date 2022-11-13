@@ -1,0 +1,12 @@
+{
+  "name": "socket-connector",
+  "config": {
+    "name": "socket-connector",
+    "connector.class": "org.apache.kafka.connect.socket.SocketSourceConnector",
+    "topic": "socket-content",
+    "tasks.max": 1,
+    "schema.name": "SocketContentValue",
+    "port": 9999,
+    "batch.size": 5
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "connect.name": "SocketContentValue",
+  "fields": [
+    {
+      "default": null,
+      "name": "message",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ],
+  "name": "SocketContentValue",
+  "type": "record"
+}

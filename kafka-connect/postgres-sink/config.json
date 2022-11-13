@@ -1,0 +1,16 @@
+{
+  "name": "postgres-connector",
+  "config": {
+    "name": "postgres-connector",
+    "topics": "network-words-count",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "connection.url": "jdbc:postgresql://postgres:5432/sample",
+    "connection.user": "docker",
+    "connection.password": "docker",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter.schema.registry.url":"http://schema-registry:8081",
+    "insert.mode": "insert",
+    "auto.create": true
+  }
+}
